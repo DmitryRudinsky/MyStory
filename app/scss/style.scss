@@ -3,11 +3,12 @@
 @import 'reset';
 @import 'global';
 
+.main{
+    background-color: $bg;
+}
 
 .login{
-    background-color: $bg;
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding-top: 55px;
     &__wrapper{
         width: 100%;
         max-width: 1114px;
