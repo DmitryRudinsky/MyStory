@@ -137,5 +137,195 @@
     }
 }
 
+.projects__header{
+    margin-bottom: 70px;
+}
+
+.header{
+    &__inner{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left{
+        display: flex;
+    }
+    &__search{
+        display: flex;
+        position: relative;
+    }
+    &__logo{
+        margin-right: 110px;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 13px;
+    }
+    &__input{
+        width: 405px;
+        height: 55px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background-color: $bg;
+        border: none;
+        border-radius: 20px;
+        padding: 13px;
+    }
+    &__search-icon{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    &__right{
+        display: flex;
+    }
+    &__myprofile{
+        margin-left: 22px;
+    }
+}
+
+
+.recent-memories{
+    &__titles{
+        display: flex;
+        margin-bottom: 40px;
+    }
+    &__title{
+        display: inline-block;
+        color: #000;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-right: 1px solid #000;
+        padding-right: 30px;
+    }
+    &__subtitle{
+        display: inline-block;
+        color: rgba(0, 0, 0, 0.50);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        padding-left: 30px;
+    }
+    &__widgets{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.new-widget{
+    margin-right: 15px;
+    width: 320px;
+    height: 230px;
+    background-color: $bg;
+    border-radius: 20px;
+    position: relative;
+    &__plus{
+        position: absolute;
+        top: 90px;
+        left: 125px;
+    }
+    &__title{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: absolute;
+        bottom: 10px;
+        left: 15px;
+    }
+}
+
+.widget{
+    margin-bottom: 15px;
+    margin-right: 15px;
+    width: 320px;
+    height: 230px;
+    border-radius: 20px;
+    position: relative;
+    &:hover{
+        filter: brightness(80%);
+        transition: all .5s;
+        .widget__title{
+            transition: all .5s;
+            transform: translateY(-25px);
+        }
+        .widget__date{
+            transition: all .5s;
+            transform: translateY(-5px);
+        }
+        .widget__menu{
+            transition: all .5s;
+            transform: translateY(0px);
+        }
+    }
+    &__menu{
+        position: absolute;
+        right: 25px;
+        top: 20px;
+        transform: translateY(-30px);
+    }
+    &__title{
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+    &__date{
+        color: #FFF;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: absolute;
+        bottom: 20px;
+        left: 22px;
+        transform: translateY(30px);
+    }
+}
+
+.widget__one{
+    background-image: url(../images/projects_img/Component\ 1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.widget__two{
+    background-image: url(../images/projects_img/Component\ 2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.widget__three{
+    background-image: url(../images/projects_img/Component\ 3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+
+.widget__four{
+    background-image: url(../images/projects_img/Component\ 4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+
+.widget__five{
+    background-image: url(../images/projects_img/Component\ 5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
 
 @import 'media';
