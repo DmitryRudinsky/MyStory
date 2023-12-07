@@ -1,12 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyStory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    on branch dev
+    <main class="main">
+        <section class="login">
+            <div class="container">
+                <div class="login__wrapper">
+                    <div class="login__photos">
+                        <img class="login__photos-img" src="images/login_img/first.png" alt="login photo">
+                        <img class="login__photos-img login__photos-img__main" src="images/login_img/second.png" alt="login photo">
+                        <img class="login__photos-img" src="images/login_img/third.png" alt="login photo">
+                        <img class="login__photos-img" src="images/login_img/fourth.png" alt="login photo">
+                        <img class="login__photos-img" src="images/login_img/pimp.png" alt="login photo">
+                    </div>
+                    <div class="login__modal">
+                        <h2 class="login__modal-title">
+                            Добро пожаловать <br>в <span>My Story!</span>
+                        </h2>
+                        <form class="login__modal-form" action="#">
+                            <label class="login__modal-label login__modal-label-email">
+                                <input placeholder="Email" class="login__modal-input" type="text" required>
+                            </label>
+                            <label class="login__modal-label">
+                                <input placeholder="Пароль" class="login__modal-input" type="password" required>
+                            </label>
+                            <div class="login__modal-sub">
+                                <label class="login__modal-label login__modal-checkbox">
+                                    <input type="checkbox">
+                                    Запомнить меня
+                                </label>
+                                <a class="login__modal-error" href="#">Забыли пароль?</a>
+                            </div>
+                                
+                        </form>
+                        <div class="login__modal-inputs">
+                            <a href="#" class="login__modal-ways login__modal-ways__google">
+                                <p class="login__modal-ways__text">
+                                    Войти с помощью<br>Google
+                                </p>
+                            </a>
+                            <a href="#" class="login__modal-ways login__modal-ways__vk">
+                                <p class="login__modal-ways__text">
+                                    Войти с помощью<br>ВКонтакте
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

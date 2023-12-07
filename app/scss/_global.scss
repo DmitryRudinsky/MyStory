@@ -1,0 +1,26 @@
+html,
+body{
+    height: 100%;
+}
+
+body{
+    font-size: 16px;
+    line-height: 14px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main{
+    flex-grow: 1;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a{
+    color: #000;
+}

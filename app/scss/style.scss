@@ -2,4 +2,139 @@
 @import 'fonts';
 @import 'reset';
 @import 'global';
+
+
+.login{
+    background-color: $bg;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    &__wrapper{
+        width: 100%;
+        max-width: 1114px;
+        display: flex;
+        background-color: #ffffff;
+        padding-top: 128px;
+        padding-bottom: 128px;
+        padding-right: 52px;
+        padding-left: 64px;
+        border-radius: 30px;
+    }
+    &__photos{
+        flex-basis: 500px;
+        position: relative;
+        &-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            &:nth-child(1){
+                left: 0px;
+                top: 100px;
+                z-index: 3;
+            };
+            &:nth-child(2){
+                z-index: 1;
+                left: 100px;
+                top: 20px;
+                border-bottom: 95px solid #ffffff;
+                border-top:12px solid #ffffff;
+                border-left:12px solid #ffffff;
+                border-right:12px solid #ffffff;  
+                box-shadow: 12px 2px 20px 1px rgba(0, 0, 0, 0.2)
+            };
+            &:nth-child(3){
+                left: 285px;
+                top: -40px;
+            };
+            &:nth-child(4){
+                z-index: 2;
+                left: 280px;
+                top: 215px;
+            };
+            &:nth-child(5){
+                z-index: 2;
+                left: 200px;
+                top: 15px;
+            };
+        }
+    }   
+    &__modal{
+        flex-basis: 450px;
+        &-title{
+            color: #000;
+            text-align: center;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 45px;
+            span{
+                font-weight: 600;
+            }
+        }
+        &-label{
+            display: block;
+            &-email{
+                margin-bottom: 30px;
+            }
+        }
+        &-input{
+            font-size: 24px;
+            border: none;
+            width: 100%;
+            display: block;
+            padding: 6px 6px;
+            height: 42px;
+            border-bottom: 1px solid #000;
+        }
+        &-sub{
+            margin-top: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-checkbox{
+            display: inline;
+            font-size: 14px;
+        }
+        &-error{
+            font-size: 14px;
+        }
+        &-inputs{
+            margin-top: 28px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-ways{
+            max-width: 220px;
+            width: 100%;
+            font-size: 12px;
+            background-color: $bg;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 75px;
+            padding-right: 32px;
+            border-radius: 15px;
+            position: relative;
+            &::before{
+                width: 30px;
+                height: 30px;
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: 33px;
+            }
+            &__google{
+                &::before{
+                    background-image: url(../images/login_img/google.svg);
+                }
+            }
+            &__vk{
+                &::before{
+                    background-image: url(../images/login_img/vk.svg);
+                }
+            }
+        }
+    }
+}
+
+
 @import 'media';
