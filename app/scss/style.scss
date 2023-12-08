@@ -384,6 +384,7 @@
 .map{
     &__inner{display: flex;}
     &__instruments{
+        position: fixed;
         background-color: $bg;
         max-width: 65px;
         width: 100%;
@@ -438,8 +439,56 @@
 }
 
 .mainpage__widgets{
+    margin-top: 80px;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
+
+.mainpage__text-widget{
+    margin-right: 141px;
+    margin-left: 180px;
+    width: 210px;
+    height: 210px;
+    background-color: #FFFCB7;
+    padding: 32px 17px;
+    &__title{
+        margin-bottom: 8px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    &__text{
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.mainpage__photo-widget-1{
+    margin-right: 120px;
+    transform: translateY(-60px);
+}
+
+.mainpage__photo-widget-2{
+    background-color: #FFF;
+    padding: 8px 8px 68px;
+    margin-right: 60px;
+    box-shadow: 12px 12px 20px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+.mainpage__photo-widget-4{
+    transform: translateX(70px);
+}
+
+.mainpage__photo-widget-5{
+    transform: translateX(70px);
+}
+
+
 
 @import 'media';
