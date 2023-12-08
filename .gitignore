@@ -7,4 +7,3 @@ npm-debug.*W
 dist/
 node_modules/
 package-lock.json
-app/css/*

@@ -155,11 +155,7 @@
         position: relative;
     }
     &__logo{
-        margin-right: 110px;
-        font-size: 28px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        margin-right: 140px;
         margin-top: 13px;
     }
     &__input{
@@ -328,19 +324,22 @@
     background-size: cover;
 }   
 
+.logo__img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    left: 100px;
+}
+
 .header-mainpage{
+    margin-bottom: 90px;
     &__inner{
         display: flex;
         justify-content: space-between;
     }
     &__logo{
         margin-top: 34px;
-    }
-    &__logo-link{
-        font-size: 28px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
     }
     &-menu{
         display: flex;
@@ -380,6 +379,67 @@
     &__text{
         margin-left: 15px;
     }
+}
+
+.map{
+    &__inner{display: flex;}
+    &__instruments{
+        background-color: $bg;
+        max-width: 65px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 25px;
+        box-shadow: 12px 12px 20px 1px rgba(0, 0, 0, 0.2);
+        &:hover{
+            transition: all .3s;
+            align-items: flex-start;
+            max-width: 135px;
+            width: 100%;
+            .instrument__text{
+                transform: translateX(70px);
+                transition: all .3s;
+            }
+            .instrument__logo{
+                padding-left: 10px;
+                transition: all .3s;
+            }
+            .map__instrument:first-child .instrument__logo{
+                padding-left: 15px;
+            }
+        }
+    }
+    &__instrument{
+        position: relative;
+        padding-bottom: 14px;
+        &:first-child{
+            padding-top: 17px;
+        }
+        &:last-child{
+            padding-bottom: 17px;
+        }
+    }
+}
+
+.instrument__text{
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transform: translateX(-3220px);
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    &:hover{
+        color: #000;
+    }
+}
+
+.mainpage__widgets{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @import 'media';
