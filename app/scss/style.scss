@@ -328,4 +328,58 @@
     background-size: cover;
 }   
 
+.header-mainpage{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        margin-top: 34px;
+    }
+    &__logo-link{
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &-menu{
+        display: flex;
+        background-color: $bg;
+        margin-top: 15px;
+        padding: 13px 26px;
+        border-radius: 10px;
+    }
+}
+
+.header-menu{
+    &__button{
+        transform: translateY(4px);
+    }
+    &__text{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transform: translateY(4px);
+    }
+    &__share-button{
+        color: #FFF;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 10px 25px;
+        border-radius: 10px;
+        background-color: #FF7B31;
+        margin-left: 60px;
+    }
+    &__friends{
+        display: flex;
+        margin-left: 14px;
+    }
+    &__text{
+        margin-left: 15px;
+    }
+}
+
 @import 'media';
